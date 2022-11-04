@@ -110,3 +110,22 @@ color: #FFFFFF;
 .address-nav .link {
     color: rgba(255, 255, 255, 0.6);
 }
+/* ПОРТФОЛІО */
+/* btn */
+.btn-list, .cards-list {
+    list-style: none;
+}
+.btn-list .link {
+    color: #212121;
+}
+.btn-list .link.current {
+    color: var(--accent-color);
+}
+/* cards */
+.card-list-title {
+color: #212121;
+}
+.card-list-text {
+color: #757575;
+}
+    
