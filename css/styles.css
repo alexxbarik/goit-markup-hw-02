@@ -63,7 +63,7 @@ letter-spacing: 0.02em;
     color: var(--accent-color);
 }
 /* auth-nav */
-.auth-nav .link,
+.auth-nav .link-tel,
 .auth-nav .link-mail {
 color: var(--primary-text-color);
 font-weight: 500;
@@ -72,7 +72,9 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 }
 .auth-nav .link-mail:hover,
-.auth-nav .link-mail:focus {
+.auth-nav .link-mail:focus
+.auth-nav .link-tel:hover, 
+.auth-nav .link-tel:focus {
     color: var(--accent-color);
 }
 
@@ -133,13 +135,11 @@ line-height: 1.19;
 }
 .feature-list .text {
     color: var(--primary-text-color);
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 }
 .team-list .text {
     color: var(--primary-text-color);
-font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
 }
@@ -150,16 +150,18 @@ line-height: 1.19;
 .address-nav .link-map {
 color: #FFFFFF;
 font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 }
 .address-nav .link {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
+}
+.address-nav .link:hover, 
+.address-nav .link:focus{
+    color: var(--accent-color);
 }
 /* ПОРТФОЛІО */
 .portfolio-btn, .portfolio-list {
@@ -169,6 +171,11 @@ line-height: 1.71;
 .portfolio-btn .button {
     color:var(--title-text-color);
     background-color: var(--secondary-bg-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.63;
+letter-spacing: 0.03em;
+text-align: center;
 }
 .portfolio-btn .button:hover,
 portfolio-btn .button:focus {
@@ -177,8 +184,14 @@ portfolio-btn .button:focus {
 /* наші роботи */
 .portfolio-list-title {
 color: var(--title-text-color);
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
 }
 .portfolio-list .text {
 color: var(--primary-text-color);
+font-size: 16px;
+line-height: 1.88;
 }
   
