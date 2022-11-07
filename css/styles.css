@@ -63,7 +63,7 @@ letter-spacing: 0.02em;
     color: var(--accent-color);
 }
 /* auth-nav */
-.auth-nav .link-tel,
+.auth-nav .link,
 .auth-nav .link-mail {
 color: var(--primary-text-color);
 font-weight: 500;
@@ -72,11 +72,12 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 }
 .auth-nav .link-mail:hover,
-.auth-nav .link-mail:focus
-.auth-nav .link-tel:hover, 
-.auth-nav .link-tel:focus {
+.auth-nav .link-mail:focus {
     color: var(--accent-color);
 }
+.auth-nav .link:hover, .auth-nav .link:focus {
+    color: var(--accent-color);
+}  
 
 /* hero */
 .hero {
