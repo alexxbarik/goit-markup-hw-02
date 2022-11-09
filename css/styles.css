@@ -4,6 +4,7 @@
 /* колір акценту #2196F3;*/
 /*основний колір фону #F5F5F5;*/
 /* вторинний колір фону #F5F4FA;*/
+/* колір посилання в футері mail tel  rgba(255, 255, 255, 0.6) */
 
 :root {
     --primary-text-color:#757575;
@@ -14,13 +15,14 @@
     --secondary-bg-color:#F5F4FA;
     --hero-bg-color:#2F303A;
     --primary-logo-color:#000000;
+    --secondary-link-color: rgba(255, 255, 255, 0.6);
 }
-.body {
+body {
 color: var(--primary-text-color);
 background-color: var(--primary-bg-color);
-font-family: Roboto, Sans-serif;
-letter-spacing: 0.03em;
+font-family: "Roboto", "Sans-serif";
 font-size: 14px;
+letter-spacing: 0.03em;
 line-height: 1.71;
 }
 .list, .feature-list, .work-list, .team-list  {
@@ -33,7 +35,7 @@ line-height: 1.71;
 .logo {
 text-decoration: none;
 color:var(--primary-logo-color);
-font-family: Raleway, sans-serif;
+font-family: "Raleway", "sans-serif";
 font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
@@ -96,6 +98,19 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 }
+/* hidden */
+.visually-hidden {
+    position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*button*/
 .button {
     color:var(--head-title-color);
@@ -112,6 +127,9 @@ letter-spacing: 0.06em;
 }
 
 /* section */
+.section-team {
+    background-color: var(--secondary-bg-color);
+}
 .section-title {
     color:var(--title-text-color) ;
 font-weight: 700;
@@ -156,7 +174,7 @@ line-height: 1.71;
 }
 .address-nav .link {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
+    color:var(--secondary-link-color);
     font-style: normal;
 font-size: 14px;
 line-height: 1.71;
@@ -173,7 +191,7 @@ line-height: 1.71;
 .portfolio-btn .button {
     color:var(--title-text-color);
     background-color: var(--secondary-bg-color);
-    font-family: Roboto, Sans-serif;
+    font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.63;
